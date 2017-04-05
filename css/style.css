@@ -1,0 +1,60 @@
+body{
+	font-family: 'Crimson Text', 
+	serif;
+}
+
+/*header*/ 
+#header-nav {
+	background-color: #d9d9d9; 
+	border-radius: 0;
+	border: 0;
+;}
+
+/*logo image*/
+#logo-img {
+	width: 64px;
+	height: 64px;
+	margin: 10px 10px 10px 0;
+}
+
+/*brand*/
+.navbar-brand h1 {
+	color: #262626;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list a {
+	color: #660000;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: #dc8989;
+}
+
+#nav-list a span {
+	font-size: 1.5em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 2px solid #660000;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+}
+
+#map {
+	width:100%; 
+	height:400px
+}
+
+#LatLng {
+	width: 100%
+}
+
