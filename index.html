@@ -6,22 +6,15 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 </head>
 
 <body>
 	<header id="header-nav" class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="vbd.html" class="pull-left">
-					<img id="logo-img" alt="Logo image" src="css/images/logo.png"/>
+				<a href="#" class="navbar-brand">
+					<img id="logo-img" alt="Logo image" src="https://developers.vietbando.com/V2/Images/poweredby.png"/>
 				</a>
-
-				<div class="navbar-brand visible-md">
-					<a href="vbd.html"> 
-						<h1>Vietbando Inc</h1>
-					</a>	
-				</div>
 
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 					<span class="sr-only"> Toggle navigation</span>
@@ -29,13 +22,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>	
-
 			</div>	
 
+			<!-- content for toggling -->
 			<div id="collapsable-nav" class="collapse navbar-collapse">
-				<ul id="nav-list" class="nav navbar-nav navbar-right">
+				<ul id="collapsable-items" class="nav navbar-nav navbar-right">
 					<li>
-						<a href="vbd.html">
+						<a href="">
 							<span class="glyphicon glyphicon-home"> Home</span>
 						</a>
 					</li>
@@ -45,17 +38,11 @@
 						</a> 
 					</li>
 				</ul>
-
-			</div>
-
-			
-
-			
-		</div>
-		
+			</div>			
+		</div>		
 	</header>
 
-	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	<div id="overlays" class="btn-group btn-group-justified" role="group" aria-label="...">
 		<div class="btn-group" role="group">
 			<button type="button" class="btn btn-default" id="marker"> Marker </button>
 		</div>
@@ -75,7 +62,8 @@
 			<button type="button" class="btn btn-default" id ="layer"> Layer </button>
 		</div>
 	</div>
-
+	<br>
+	
 	<div id="map"></div> <br>
 
 	<div> <input type="text" id="LatLng" value="" placeholder="coordinates of cursor on the map" /> </div>

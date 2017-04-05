@@ -1,4 +1,5 @@
 var mypath;
+var array; //to keep track of 
 function init() {
 	/*create map properties*/
 	var mapProp = {
@@ -58,7 +59,10 @@ function init() {
 
 vbd.event.addDomListener(window, 'load', init);
 
+/*create a draggable marker*/
 function addMarker(path, position, map) {
+	var oPos;
+	var fiPos;
 	var marker = new vbd.Marker({
 			position: position,
 			draggable: true
@@ -68,17 +72,27 @@ function addMarker(path, position, map) {
 	for (var i=0; i<path.getLength(); i++) {
 		console.log("value of cell " + i + " is " + path.getAt(i));
 	}
-	getNewPos(marker, map);
+	vbd.event.addListener(marker, 'drag', function(){
+
+	});
+	getOriginalPos(marker);
+	getFinalPos(marker);
 
 }
 
-function getNewPos(marker, map) {
+/*get the original position before dragging starts*/
+function getOriginalPos(marker) {
 	vbd.event.addListener(marker, 'dragstart', function(){
 		console.log("old position is " + this.getPosition());
+		this.getPosition();
 	});
+}
 
+/*get position where the marker moved to*/
+function getFinalPos(marker) {
 	vbd.event.addListener(marker, 'dragend', function(){
 		console.log("new position is " + this.getPosition());
+		this.getPosition()
 	});
 }
 
