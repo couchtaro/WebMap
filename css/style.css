@@ -1,20 +1,103 @@
+
+@media screen and (max-width: 470px) {
+	#overlays>div>button {
+		font-size: 11px;
+	}
+}
+@media screen and (max-width: 420px) {
+	#overlays>div>button {
+		font-size: 10px;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 320px) {
+	#overlays>div>button {
+		font-size: 9px;
+		padding: 0;
+	}
+}
+
+body {
+	font-family: 'Crimson Text', serif;
+	background-color: #e0f2f1;
+}
+
 #logo-img {
-/*	width: 30px;
-	height: 30px;*/
 	margin-top: -7px;
 }
 
 #collapsable-items {
-	text-align: center;
-	
+	text-align: center;	
+}
+#collapsable-items span {
+	font-weight: bold;
+}
+#collapsable-nav>ul>li>a:hover {
+	background-color: #009688;	
+}
+
+#header-nav {
+	background-color: #80cbc4;
+}
+
+.navbar-header button.navbar-toggle {
+	border: 3px solid #009688;
+}
+
+.navbar-header .icon-bar {
+
+}
+
+.glyphicon {
+	color: #00695c;
+}
+
+#search, #header-nav, #overlays {
+	margin-bottom: 6px;
+}
+
+#search{
+	margin: 5px;
+}
+
+#search>div {
+	padding: 0;
+}
+
+.blocks {
+	border-spacing: 5px;
+}
+
+#overlays>div>button {
+	border-radius: 7px;
+	padding:3px;
+	background-color: #80cbc4;
+}
+
+#overlays>div>button:hover {
+	background-color: #26a69a;
+}
+#overlays button {
+	color: #1C2331;
+	font-weight: bold;
 }
 
 #map {
 	width:100%; 
-	height:400px
+	height:400px;
 }
 
-#LatLng {
-	width: 100%
+#cco>.col-md-6 {
+	margin: 7px;
 }
 
+footer {
+	background-color: #80cbc4;
+	bottom: 0px;
+	position: float;
+	height: 30px;
+}
+
+footer div {
+	padding: 5px;
+}

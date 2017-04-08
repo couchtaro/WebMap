@@ -6,6 +6,7 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 </head>
 
 <body>
@@ -42,33 +43,64 @@
 		</div>		
 	</header>
 
-	<div id="overlays" class="btn-group btn-group-justified" role="group" aria-label="...">
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-default" id="marker"> Marker </button>
+	<!-- <div class="container"> -->
+		<div id="overlays" class="btn-group btn-group-justified blocks" role="group" aria-label="...">
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id="marker"> Marker </button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id ="polyline"> Polyline </button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id ="polygon"> Polygon </button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id ="rectangle"> Rectangle </button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id ="circle"> Circle </button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id ="layer"> Layer </button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-responsive" id ="del"> Clear All </button>
+			</div>
 		</div>
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-default" id ="polyline"> Polyline </button>
-		</div>
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-default" id ="polygon"> Polygon </button>
-		</div>
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-default" id ="rectangle"> Rectangle </button>
-		</div>
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-default" id ="circle"> Circle </button>
-		</div>
-		<div class="btn-group" role="group">
-			<button type="button" class="btn btn-default" id ="layer"> Layer </button>
-		</div>
+	<!-- </div> -->
+
+	<div class="row" id="search">
+		<div class="col-md-10 col-sm-12">
+			<div class="input-group"> 
+				<input type="text" class="form-control" placeholder="Enter your search">
+				<span class="input-group-btn">
+					<button id="s_btn" type="button" class="btn btn-default"> Search </button>
+				</span>
+			</div>
+		</div>		
 	</div>
-	<br>
-	
-	<div id="map"></div> <br>
 
-	<div> <input type="text" id="LatLng" value="" placeholder="coordinates of cursor on the map" /> </div>
-	
+	<!-- <form id="search" class="form-inline" role="search">
+		<div class="form-group">
+			<input type="text" class="form-control" name="">
+		</div>
+		<button id="s_btn" type="submit" class="btn btn-default"> Search </button>		
+	</form> -->
 
+	<div id="map"></div>
+
+	<div class="row" id="cco">
+		<div class="col-md-6">
+			<div class="input-group"> 
+				<span class="input-group-addon"> Cursor's coordinate </span>
+				<input type="text" class="form-control" id="LatLng" value="" placeholder="move your cursor" aria-describedby="coordinates"/>
+			</div>
+		</div>		
+	</div>
+	
+	<footer>
+		<div > &copy; 2017</div>	
+	</footer>
 	
 	<script src="js/jquery-3.2.0.slim.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
