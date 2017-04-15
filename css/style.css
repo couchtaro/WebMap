@@ -1,25 +1,11 @@
-
-@media screen and (max-width: 470px) {
-	#overlays>div>button {
-		font-size: 11px;
-	}
-}
-@media screen and (max-width: 420px) {
-	#overlays>div>button {
-		font-size: 10px;
-		padding: 0;
-	}
-}
-@media screen and (max-width: 320px) {
-	#overlays>div>button {
-		font-size: 9px;
-		padding: 0;
-	}
-}
-
-body {
+/*body {
 	font-family: 'Crimson Text', serif;
 	background-color: #e0f2f1;
+}
+*/
+
+body {
+	overflow-x: hidden; 
 }
 
 #logo-img {
@@ -44,51 +30,40 @@ body {
 	border: 3px solid #009688;
 }
 
-.navbar-header .icon-bar {
-
-}
-
 .glyphicon {
 	color: #00695c;
 }
 
-#search, #header-nav, #overlays {
+#header-nav {
 	margin-bottom: 6px;
 }
 
-#search{
+/*#search{
 	margin: 5px;
 }
 
 #search>div {
 	padding: 0;
+}*/
+#wrapper {
+	padding-left: 0;
 }
 
-.blocks {
-	border-spacing: 5px;
-}
-
-#overlays>div>button {
-	border-radius: 7px;
-	padding:3px;
-	background-color: #80cbc4;
-}
-
-#overlays>div>button:hover {
-	background-color: #26a69a;
-}
-#overlays button {
-	color: #1C2331;
-	font-weight: bold;
+#sideMenu {
+	z-index: 1000;
+	position: fixed;
+	left: 250px;
+	width: 0;
+	height: 100%;
+	margin-left: -250px;
+	overflow-y: auto;
+	background-color: #000;
 }
 
 #map {
 	width:100%; 
-	height:400px;
-}
-
-#cco>.col-md-6 {
-	margin: 7px;
+	height:800px;
+	position: absolute;
 }
 
 footer {
